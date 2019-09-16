@@ -1,0 +1,434 @@
+body,ul,li,p,span,a,h3{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.header>div{
+    /* background: pink; */
+    /* position: relative;
+    height: 52px; */
+}
+.header .userinfo{
+
+      
+}
+.header .userinfo .menu-icon{
+    width: 50px;
+    height: 44px;
+    position: absolute;
+    /* 定位会让元素脱离标准流 撑不起父级的高度*/
+}
+.header .userinfo .menu{
+    background: url(images/hanbaobao_04adf60.png)no-repeat center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+}
+.header .rubush{
+    width: 108px;
+    height: 23px;
+    position: absolute;
+    top: 2%;
+    right: 20%;
+}
+.header .rubush img{
+    width: 100%;
+    height: 100%;
+}
+.header .rubush-box{
+    width: 42px;
+    height: 42px;
+    background: url(images/126.png)no-repeat center;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    top: -9px;
+    right: 0;
+}
+.header .square{
+    width: 16px;
+    height: 16px;
+    /* background: url(images/squareicon_e582f4c48e93901e747536ad982e030d.png)no-repeat center; */
+    position: absolute;
+    top: 16px;
+    right: 18px;
+}
+.header .square a{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(images/squareicon_e582f4c48e93901e747536ad982e030d.png)no-repeat center;
+    background-size: 100% 100%;
+}
+/* ++++++++++++++++++++++++++++头部最上方结束+++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++面板开始 ++++++++++++++++++++++++++++++++++++++++*/
+.aside{
+    width: 250px;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    transition: all 0.6s;
+}
+.aside .menu-icon{
+    width: 50px;
+    height: 44px;
+    position: absolute;
+    /* 定位会让元素脱离标准流 撑不起父级的高度*/
+}
+.aside .menu2{
+    background: url(images/hanbaobao_04adf60.png)no-repeat center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;                                      
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+}
+
+.heads{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50px;
+}
+.heads img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    line-height: 70px;
+    left: 25px;
+    top: 13px;
+}
+.heads span{
+    position: absolute;
+    left: 120px;
+    top: 40px;
+}
+.list{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 160px;
+}
+.list li{
+    width: 100%;
+    height: 50px;
+    /* background: red; */
+    text-align: center;
+}
+.list img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 40px;
+}
+.readme{
+    position: absolute;
+    left: 50px;
+    top: 635px;
+    font-size: 10px;
+    color: #ccc;
+}
+.seteer_aa{
+    width: 250px;
+    height: 80px;
+    /* background: blue; */
+    position: relative;
+    left: 0px;
+    top: 550px;
+}
+.seteer{
+    width: 54px;
+    height: 75px;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    /* background: red; */
+}
+.seta{
+    width: 19px;
+    height: 20px;
+    background: url(images/spritelist_71904c7.png) no-repeat;
+    background-size: 200px 100px;
+    background-position: -1px -80px;
+    margin: 3px 0;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+.setatwo{
+    position: absolute;
+    left: 13px;
+    top: 40px;
+    font-size: 0.12rem;
+    color: #666666;
+}
+.location{
+    width: 54px;
+    height: 75px;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    /* background: red; */
+}
+.heat{
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+    font-size: 19px;
+    font-family: PingFangSC-Medium;
+    color: #666C82;
+}
+.text{
+    position: absolute;
+    left: 18px;
+    top: 41px;
+    font-size: 0.12rem;
+    color: #666666;
+}
+/* +++++++++++++++++++++++++++++++面板结束+++++++++++++++++++++++++++++++++++ */
+
+/* logo开始 */
+.logo{
+    width: 183px;
+    height: 57px;
+    /* border:1px solid red;  */
+    position: absolute;
+    left: 94px;
+    top: 65px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+/* LOGO结束 */
+
+/* 搜索框开始 */
+.search{
+    width: 341px;
+    height: 44px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+    position: absolute;
+    left: 15px;
+    top: 150px;
+}
+.search .cont{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: inherit;
+    width: 60px;
+    height: 44px;
+    padding: 0 10px;
+    border: 0;
+    border-left: 1px solid #e8e8e8;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    color: #38f;
+    background: white;
+}
+.small{
+    width: 77px;
+    height: 44px;
+    /* background: red; */
+    position: absolute;
+    left: 180px;
+    top: 0px;
+}
+.voice{
+    width: 34px;
+    height: 44px;
+    position: absolute;
+    left: 8px;
+    top: 12px;
+}
+.voice img{
+    display: inline-block;
+    height: 19px;
+    padding-right: 10px;
+    border-right: 1px solid #e8e8e8;
+    line-height: 19px;
+}
+.uploader{
+    width: 43px;
+    height: 44px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+}
+.uploader img{
+    width: 17px;
+    height: 17px;
+}
+/* 搜索框结束 */
+/* 轮播开始 */
+.carousel{
+    width: 1135px;
+    height: 113px;
+    background:#F8F8F8;
+    position: absolute;
+    left: 0px;
+    top: 230px;
+    
+}
+.carousel .ull{
+    width: 1125px;
+    height: 113px;
+}
+.carousel .ull img{
+    width: 375px;
+    height: 113px;
+    float: left;
+}
+/*++++++++++++++++++++++++++++++++++++ 内容开始+++++++++++++++++++++++++++++ */
+.content{
+    width: 375px;
+    height: 100%;
+    position: absolute;
+    top: 360px;
+    left: 0px;
+}
+.cont1{
+    width: 375px;
+    height: 100px;
+}
+.headline{
+    width: 360px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.stick{
+    width: 44px;
+    height: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.stick img{
+    width: 13px;
+    height: 13px;
+}
+.stick span{
+    color: red;
+    font-size: 13px;
+}
+.root{
+    font-size: 13px;
+    color: #ccc;
+    position: relative;
+    left: 60px;
+    top: -17px;
+}
+.rule{
+    width: 350px;
+    height: 1px;
+    background: #ccc;
+    margin-left: 15px;
+}
+.picture{
+    width: 351px;
+    height: 75.43px;
+    /* background: red; */
+    margin-left: 10px;
+}
+.picture img{
+    width: 113.55px;
+    height: 75.42px;
+}
+.roota{
+    font-size: 13px;
+    color: #ccc;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.rulea{
+    width: 350px;
+    height: 1px;
+    background: #ccc;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+/* ++++++++++++++++++内容结束++++++++++++++++++++ */
+/* ++++++++++++++++++底部开始++++++++++++++++++++ */
+.bottom{
+    width: 375px;
+    height: 98px;
+    background: #F8F8F8;
+    position: relative;
+    top: 1921px;
+    left: 0px;
+}
+.bottoma{
+    width: 319px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.bottoma img{
+    width: 16px;
+    height: 16px;
+}
+.bottoma span{
+    font-size: 13px;
+    color: #666666;
+}
+.bottomb{
+    width: 319px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    font-size: 13px;
+    color: #666666;
+}
+.bottomc{
+    width: 319px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    font-size: 13px;
+    color: #666666;
+}
+.bottomc img{
+    width: 12px;
+    height: 12px;
+}
+/* ++++++++++++++++++底部结束++++++++++++++++++++ */
