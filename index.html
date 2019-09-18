@@ -6,396 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
 </head>
 
 <body>
     <div class="header">
-        <!-- 头部导航 -->
+        <!-- 头部导航条 -->
         <div class="head">
-            <div class="heada">
-                <img src="images/下载.png" alt="">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
             </div>
-            <div class="head-input">
-                <div class="headb">
-                    <img src="images/下载 (1).png" alt="">
-                </div>
-                <div class="headc">
-                    <img src="images/搜索.png" alt="">
-                </div>
-                <input type="text" placeholder="微软电脑">
+            <ul class="list" id="list">
+                <li class="one">网站首页</li>
+                <li>关于我们</li>
+                <li>在线下单</li>
+                <li>业务范围</li>
+                <li>新闻咨询</li>
+                <li>联系我们</li>
+            </ul>
+            <div class="mian" id="mian">
+                <img src="images/mian.png" alt="" id="hui">
             </div>
-            <div class="register">
-                登录
-            </div>
-        </div>
-        <!-- 背景 -->
-        <div class="background">
+            <script>
+                window.onload = function () {
+                    var mian = document.getElementById("mian");
+                    var hui = document.getElementById("hui");
+                    // var list = document.getElementById("list");
+                    mian.addEventListener('click', function () {
+                        slide();
+                    }, false);
+                    list.addEventListener('click', function () {
+                        slides();
+                    }, false);
+                    function slide() {
+                        console.log("ok");
+                        list.style.display = "block";
+                    };
+                    function slides() {
+                        console.log("ok");
+                        list.style.display = "none";
+                    }
+                }
+            </script>
         </div>
         <!-- 轮播图 -->
-        <div class="carousel main">
-            <ul class="list">
-                <li><img src="images/7de06196e583d621.jpg!cr_1125x445_0_171!q70.jpg" alt=""></li>
-                <li><img src="images/3219200d07cfc917.jpg!cr_1125x445_0_171!q70.jpg" alt=""></li>
-                <li><img src="images/b6eb36331095813a.jpg!cr_1125x445_0_171!q70.jpg" alt=""></li>
-                <li><img src="images/201.jpg" alt=""></li>
-                <li><img src="images/101.jpg" alt=""></li>
+        <div class="inner">
+            <ul class="ull">
+                <li class="item"><img src="images/banner1.jpg" alt=""></li>
+                <li><img src="images/banner2.jpg" alt=""></li>
+                <li><img src="images/banner3.jpg" alt=""></li>
             </ul>
         </div>
-        <!-- 主图 -->
-        <div class="boodly">
-            <div class="boodlya">
-                <img src="images/55d9863a6b7cfded.png!q70.jpg" alt="">
-            </div>
-            <div class="boodlyb">
-                <img src="images/8f6cf0c727b34eca.png!q70.jpg" alt="">
-            </div>
-            <div class="boodlyc">
-                <img src="images/6c866a879e438900.png!q70.jpg" alt="">
-            </div>
-        </div>
-        <!-- 小图标 -->
-        <div class="box">
-            <div>
-                <img src="images/1.png" alt="">
-                <span>京东超市</span>
-            </div>
-            <div>
-                <img src="images/2.png" alt="">
-                <span>数码电器</span>
-            </div>
-            <div>
-                <img src="images/3.png" alt="">
-                <span>京东服饰</span>
-            </div>
-            <div>
-                <img src="images/4.png" alt="">
-                <span>京东生鲜</span>
-            </div>
-            <div>
-                <img src="images/5.png" alt="">
-                <span>京东到家</span>
-            </div>
-            <div>
-                <img src="images/6.png" alt="">
-                <span>充值缴费</span>
-            </div>
-            <div>
-                <img src="images/7.png" alt="">
-                <span>9.9元拼</span>
-            </div>
-            <div>
-                <img src="images/8.png" alt="">
-                <span>领劵</span>
-            </div>
-            <div>
-                <img src="images/9.png" alt="">
-                <span>赚钱</span>
-            </div>
-            <div>
-                <img src="images/10.png" alt="">
-                <span>PLUS会员</span>
-            </div>
-        </div>
-        <!-- 京东秒杀 -->
-        <div class="seckill">
-            <div class="top">
-                <div class="topa">
-                    <img src="images/下载 (2).png" alt="">
-                    <span class="badian">8点场</span>
-                    <span class="badian2">0-1:0-1:0-2</span>
-                </div>
-                <div class="topb">
-                    <span>更多秒杀</span>
-                    <img src="images/arrow_rt_2ccb8cd5.png" alt="">
-                </div>
-            </div>
-            <div class="cont">
-                <div class="cont1">
-                    <img src="images/111.jpg" alt="">
-                    <span>￥3668</span>
-                    <div class="heng"></div>
-                    <p>￥4099</p>
-                </div>
-                <div class="cont1">
-                    <img src="images/222.jpg" alt="">
-                    <span>￥949</span>
-                    <div class="heng"></div>
-                    <p>￥1299</p>
-                </div>
-                <div class="cont1">
-                    <img src="images/333.jpg" alt="">
-                    <span>￥5698</span>
-                    <div class="heng"></div>
-                    <p>￥6188</p>
-                </div>
-                <div class="cont1">
-                    <img src="images/444.jpg" alt="">
-                    <span>￥119</span>
-                    <div class="heng"></div>
-                    <p>￥169</p>
-                </div>
-                <div class="cont5">
-                    <img src="images/555.jpg" alt="">
-                    <span>￥15</span>
-                    <div class="heng5"></div>
-                    <p>￥27</p>
-                </div>
-            </div>
-        </div>
-        <!-- 919图片 -->
-        <div class="reload">
-            <img src="images/1f79a5f6c492d9cd.jpg!q70.jpg" alt="">
-        </div>
-        <!-- 京东小院 -->
-        <div class="reab">
-            <img src="images/e1af43a6ea0cb5fa.png!q70.jpg" alt="">
-        </div>
-        <!-- 无潮不乐 -->
-        <div class="dongjia">
-            <div class="dongjia1">
-                <span style="
-               background: -webkit-linear-gradient(left,#45CAFF,#1471FB);
-               background: linear-gradient(90deg, #45CAFF,#1471FB);
-               -webkit-background-clip: text;
-               color: transparent;font-weight: bold;">无潮不乐</span>
-                <p>
-                    无潮不乐，穿既潮流
-                </p>
-                <img src="images/70.jpg" alt="">
-                <img src="images/71.jpg" alt="">
-            </div>
-            <div class="dongjia1">
-                <span style="
-                    background: -webkit-linear-gradient(left,#45CAFF,#1471FB);
-                    background: linear-gradient(90deg, #45CAFF,#1471FB);
-                    -webkit-background-clip: text;
-                    color: transparent;font-weight: bold;">意式家具</span>
-                <p>
-                    极简主义的生活方式
-                </p>
-                <img src="images/72.jpg" alt="">
-                <img src="images/73.jpg" alt="">
-            </div>
-            <div class="dongjia2">
-                <span>流行美妆</span>
-                <p>优雅又吸晴</p>
-                <img src="images/75.jpg" alt="">
-            </div>
-            <div class="dongjia2">
-                <span>好物必败</span>
-                <p>不止好看</p>
-                <img src="images/76.jpg" alt="">
-            </div>
-            <div class="dongjia2">
-                <span>时尚大咖</span>
-                <p>少女们的爱</p>
-                <img src="images/77.jpg" alt="">
-            </div>
-            <div class="dongjia2">
-                <span>净爽剃须</span>
-                <p>男神同款</p>
-                <img src="images/78.jpg" alt="">
-            </div>
-        </div>
-        <!-- 每日逛 -->
-        <div class="reab">
-            <img src="images/80.jpg" alt="">
-        </div>
-        <!-- 免息星球 -->
-        <div class="mianxi">
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
-                background: linear-gradient(90deg, #FF2A2A,#F139D2);
-                -webkit-background-clip: text;
-                color: transparent;">免息星球</span>
-                <p>白条免息购</p>
-                <img src="images/81.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
-                    background: linear-gradient(90deg, #FF2A2A,#F139D2);
-                    -webkit-background-clip: text;
-                    color: transparent;">品牌闪购</span>
-                <p>享品质好物</p>
-                <img src="images/82.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
-                    background: linear-gradient(90deg, #FF2A2A,#F139D2);
-                    -webkit-background-clip: text;
-                    color: transparent;">品牌秒杀</span>
-                <p>低价抢大牌</p>
-                <img src="images/83.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
-                    background: linear-gradient(90deg, #FF2A2A,#F139D2);
-                    -webkit-background-clip: text;
-                    color: transparent;">京东直播</span>
-                <p>边看边买</p>
-                <img src="images/84.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#D400FF,#FF320A);
-                background: linear-gradient(90deg, #D400FF,#FF320A);
-                -webkit-background-clip: text;
-                color: transparent;">排行榜</span>
-                <p>专属购物指南</p>
-                <img src="images/85.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#00C2AB,#3E94FF);
-                background: linear-gradient(90deg, #00C2AB,#3E94FF);
-                -webkit-background-clip: text;
-                color: transparent;">拍拍好物</span>
-                <p>iPhone 5折起</p>
-                <img src="images/86.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#FF765C,#FF23B3);
-                background: linear-gradient(90deg, #FF765C,#FF23B3);
-                -webkit-background-clip: text;
-                color: transparent;">新品首发</span>
-                <p>vivo X27</p>
-                <img src="images/87.jpg" alt="">
-            </div>
-            <div class="mianxi1">
-                <span style=" background: -webkit-linear-gradient(left,#2AD396,#85BB1F);
-                background: linear-gradient(90deg, #2AD396,#85BB1F);
-                -webkit-background-clip: text;
-                color: transparent;">发现好货</span>
-                <p>教你买买买</p>
-                <img src="images/88.jpg" alt="">
-            </div>
-        </div>
-        <!-- 京东快报 -->
-        <div class="bulletin">
-            <img src="images/5aa8935bN94e31ff6.jpg" alt="">
-            <div class="main2">
-                <ul class="list2">
-                    <li><span>最新</span>森海塞尔凭什么是耳机界的大佬...</li>
-                    <li><span>推荐</span>号称最长寿的"街机",如今迎来...</li>
-                    <li><span>热门</span>为什么ipad mini5会被很多玩家...</li>
-                    <li><span>HOT</span>四十的女人流行这样穿...</li>
-                </ul>
-            </div>
-            <span class="bull">更多</span>
-        </div>
-        <!-- 为你推荐 -->
-        <div class="recommend">
-            <img src="images/88174b36f85283b6.png" alt="">
-        </div>
-        <!-- 正式商品开始 -->
+        <!-- 内容 -->
         <div class="content">
-            <div class="content1">
-                <img src="images/91.jpg" alt="">
-                <span class="span1"> 天能电池48v60v72v电动车电池铅酸两轮车三轮车电瓶车蓄电池 以旧换新48v12ah/4只装 </span>
-                <span class="span2">￥588</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
+            <div class="cont">
+                <div class="left_cont">
+                    <div class="top_left">
+                        <div class="place">
+                            <span>网上下单</span>
+                        </div>
+                        <ul class="place_on">
+                            <li>立即下单</li>
+                            <li>常见问题</li>
+                        </ul>
+                    </div>
+                    <div class="bottom_left">
+                        <div class="placetwo">
+                            <span>服务介绍</span>
+                        </div>
+                        <ul class="placetwo_on">
+                            <li><img src="images/2.png"><span>物流卡航</span></li>
+                            <li><img src="images/6.png"><span>物流空运</span></li>
+                            <li><img src="images/5.png"><span>限时到达</span></li>
+                            <li><img src="images/4.png"><span>物流普运</span></li>
+                            <li><img src="images/3.png"><span>城际快线</span></li>
+                            <li><img src="images/1.png"><span>合作共赢</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_cont">
+                    <div class="top_right">
+                        <ul class="tainer">
+                            <li class="li1"><img src="images/7.png" alt=""><span>运费咨询</span></li>
+                            <li class="li2"><img src="images/8.png" alt=""><span>网点查询</span></li>
+                            <li class="li3"><img src="images/9.png" alt=""><span>解决方案</span></li>
+                        </ul>
+                    </div>
+                    <div class="bottom_right">
+                        <div class="news">
+                            <ul class="report">
+                                <li>新闻资讯</li>
+                                <span>查看更多</span>
+                            </ul>
+                        </div>
+                        <div class="state">
+                            <ul class="nation">
+                                <li>国家邮政局发通告要求严格落实收寄验视制度<span>2017-7-12 &nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                                <li>快递集团恭祝全国人民佳节愉快<span>2017-7-12 &nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                                <li>快递一周年：有你就有力量<span>2017-7-12 &nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                                <li>快递引领电商快递新风向上海站沙龙成功举办<span>2017-7-12 &nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content1">
-                <img src="images/92.png" alt="">
-                <span class="span1"> A-H【品牌特惠】夏季小白鞋女鞋子2019新款百搭基础网红洋气白鞋夏款网面透气潮鞋 白色(单网镂空) 35 </span>
-                <span class="span2">￥136</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/94.jpg" alt="">
-                <span class="span1"> 阵风（Zhen Feng）48v60v72v电动车锂电池三轮车三元锂电动摩托车电池电瓶20Ah32A 48V20Ah【50公里】送3A充电器 </span>
-                <span class="span2">￥1459</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/93.jpg" alt="">
-                <span class="span1">
-                    <品牌直降>车载睡床丰田凯美瑞充气床垫后排轿车车床成人旅行床睡床气垫 Violet紫色款
-                </span>
-                <span class="span2">￥418</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/95.jpg" alt="">
-                <span class="span1"> 华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB天空之境全网通双4G手机 </span>
-                <span class="span2">￥3988</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/96.jpg" alt="">
-                <span class="span1"> AR春秋季运动服夹克男士外套春季韩版潮流修身学生帅气外套男装连帽休闲夹克青少年上衣男褂子 黑色 L </span>
-                <span class="span2">￥135</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/93.jpg" alt="">
-                <span class="span1">
-                    <品牌直降>车载睡床丰田凯美瑞充气床垫后排轿车车床成人旅行床睡床气垫 Violet紫色款
-                </span>
-                <span class="span2">￥418</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/95.jpg" alt="">
-                <span class="span1"> 华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB天空之境全网通双4G手机 </span>
-                <span class="span2">￥3988</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/96.jpg" alt="">
-                <span class="span1"> AR春秋季运动服夹克男士外套春季韩版潮流修身学生帅气外套男装连帽休闲夹克青少年上衣男褂子 黑色 L </span>
-                <span class="span2">￥135</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/93.jpg" alt="">
-                <span class="span1">
-                    <品牌直降>车载睡床丰田凯美瑞充气床垫后排轿车车床成人旅行床睡床气垫 Violet紫色款
-                </span>
-                <span class="span2">￥418</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/95.jpg" alt="">
-                <span class="span1"> 华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB天空之境全网通双4G手机 </span>
-                <span class="span2">￥3988</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
-            <div class="content1">
-                <img src="images/96.jpg" alt="">
-                <span class="span1"> AR春秋季运动服夹克男士外套春季韩版潮流修身学生帅气外套男装连帽休闲夹克青少年上衣男褂子 黑色 L </span>
-                <span class="span2">￥135</span>
-                <span class="span3">满减</span>
-                <span class="span4">看相似</span>
-            </div>
+
         </div>
         <!-- 底部 -->
-        <div class="bottom">
-            <div class="btm1">
-                <img src="images/30.png" alt="">
-            </div>
-            <div class="btm2">
-                <img src="images/31.png" alt="">
-            </div>
-            <div class="btm3">
-                <img src="images/32.png" alt="">
-            </div>
-            <div class="btm4">
-                <img src="images/33.png" alt="">
-            </div>
-            <div class="btm5">
-                <img src="images/34.png" alt="">
-            </div>
+        <div class="footer">
+            <ul class="footer_top">
+                <li>网站首页</li>
+                <li>关于我们</li>
+                <li>在线下单</li>
+                <li>业务范围</li>
+                <li>新闻咨询</li>
+                <li>联系我们</li>
+            </ul>
+            <span>Copyright © 2009-2011,All rights reserved 更多模板：源码之家</span>
         </div>
     </div>
 </body>
